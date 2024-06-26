@@ -1,0 +1,905 @@
+<form
+  action="/Services/Booking/671"
+  enctype="multipart/form-data"
+  id="bookingForm"
+  method="post"
+>
+  <link href="/Content/Site.css" rel="stylesheet" />
+  <div class="container" id="div-container">
+    <h1 class="heading-container" id="ServizioDescrizione">
+      Agendamento serviço: Passaporte
+    </h1>
+    <input
+      id="hiddenServizioDesc"
+      name="ServizioDescrizione"
+      type="hidden"
+      value="Agendamento serviço: Passaporte"
+    />
+    <input
+      data-val="true"
+      data-val-required="The MessaggioRassicuranteWaitingList field is required."
+      id="MessaggioRassicuranteWaitingList"
+      name="MessaggioRassicuranteWaitingList"
+      type="hidden"
+      value="False"
+    />
+    <input
+      data-val="true"
+      data-val-required="The isWaitingListEnabled field is required."
+      id="isWaitingListEnabled"
+      name="isWaitingListEnabled"
+      type="hidden"
+      value="False"
+    />
+
+    <div id="divRiepilogoPrenotazione" class="riepilogoPrenotazione" style="">
+      <div id="divTitolo">Agendamento único</div>
+      <div id="divDettaglio">You are booking for 1 Appointment</div>
+      <div id="divAppuntamenti">
+        <ul>
+          <li>GABRIEL EDUARDO BRAMBILLA</li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <h2>Informações sobre a reserva</h2>
+
+      <div id="typeofbooking">
+        <input
+          data-val="true"
+          data-val-number="The field IDServizioConsolare must be a number."
+          data-val-required="The IDServizioConsolare field is required."
+          id="IDServizioConsolare"
+          name="IDServizioConsolare"
+          type="hidden"
+          value="2"
+        />
+        <input
+          data-val="true"
+          data-val-number="The field IDServizioErogato must be a number."
+          data-val-required="The IDServizioErogato field is required."
+          id="IDServizioErogato"
+          name="IDServizioErogato"
+          type="hidden"
+          value="671"
+        />
+        <label>Tipo de reserva</label>
+        <select id="typeofbookingddl">
+          <option value="1">Agendamento único</option>
+        </select>
+        <input
+          data-val="true"
+          data-val-number="The field IdTipoPrenotazione must be a number."
+          data-val-required="The IdTipoPrenotazione field is required."
+          id="hiddenTipoPrenotazione"
+          name="IdTipoPrenotazione"
+          type="hidden"
+          value="1"
+        />
+        <input
+          data-val="true"
+          data-val-number="The field NumMaxAccompagnatori must be a number."
+          data-val-required="The NumMaxAccompagnatori field is required."
+          id="hiddenNumMax"
+          name="NumMaxAccompagnatori"
+          type="hidden"
+          value="0"
+        />
+      </div>
+      <div id="numberOfCompanions" style="display: none">
+        <label>Número requerentes adicionais</label>
+        <select id="ddlnumberofcompanions"></select>
+        <input
+          data-val="true"
+          data-val-number="The field NumAccompagnatoriSelected must be a number."
+          data-val-required="The NumAccompagnatoriSelected field is required."
+          id="numAccSelected"
+          name="NumAccompagnatoriSelected"
+          type="hidden"
+          value="0"
+        />
+      </div>
+
+      <div id="applicantBufferDiv" style="margin: 10px 0px 30px; display: none">
+        <h2>Dados necessários</h2>
+        <p><strong>Sobrenome</strong></p>
+        GABRIEL EDUARDO
+        <p><strong>Nome</strong></p>
+        BRAMBILLA
+        <p><strong>Data de nascimento</strong></p>
+        12/08/2004
+      </div>
+
+      <div id="infoapplicant" style="">
+        <div id="datoaddizionale_0">
+          <label id="addizionale">
+            Na posse de passaporte italiano vencido/próximo ao vencimento
+            &nbsp;<b>*</b>
+          </label>
+          <input
+            id="DatiAddizionaliPrenotante_0___Descrizione"
+            name="DatiAddizionaliPrenotante[0]._Descrizione"
+            type="hidden"
+            value="Na posse de passaporte italiano vencido/próximo ao vencimento"
+          />
+          <select id="ddls_0" data-index="0" onchange="ControloSelect(this)">
+            <option value="0"></option>
+            <option value="1">Sim</option>
+            <option value="2">Não</option></select
+          ><input
+            data-val="true"
+            data-val-required="The _Obbligatorio field is required."
+            id="DatiAddizionaliPrenotante_0___Obbligatorio"
+            name="DatiAddizionaliPrenotante[0]._Obbligatorio"
+            type="hidden"
+            value="True"
+          />
+          <div>
+            <p>
+              <span
+                class="field-validation-valid"
+                data-valmsg-for="addizionale_0"
+                data-valmsg-replace="true"
+                style="color: red"
+              ></span>
+            </p>
+            <p>
+              <span
+                class="field-validation-valid"
+                data-valmsg-for="addizionaleRegEx_0"
+                data-valmsg-replace="true"
+                style="color: red"
+              ></span>
+            </p>
+          </div>
+        </div>
+        <input
+          data-val="true"
+          data-val-number="The field _Id must be a number."
+          data-val-required="The _Id field is required."
+          id="hiddenId0"
+          name="DatiAddizionaliPrenotante[0]._Id"
+          type="hidden"
+          value="24829"
+        /><input
+          data-val="true"
+          data-val-number="The field IDTipoDatoAddizionale must be a number."
+          data-val-required="The IDTipoDatoAddizionale field is required."
+          id="hiddenIdDatoADD_0"
+          name="DatiAddizionaliPrenotante[0]._TipoDatoAddizionale.IDTipoDatoAddizionale"
+          type="hidden"
+          value="1"
+        /><input
+          data-val="true"
+          data-val-number="The field IDTipoControllo must be a number."
+          data-val-required="The IDTipoControllo field is required."
+          id="hiddenCodDatoAdd_0"
+          name="DatiAddizionaliPrenotante[0]._TipoDatoAddizionale.IDTipoControllo"
+          type="hidden"
+          value="3"
+        /><input
+          id="hiddenRegEx_0"
+          name="DatiAddizionaliPrenotante[0]._TipoDatoAddizionale.RegEx"
+          type="hidden"
+          value=""
+        />
+        <div id="datoaddizionale_1">
+          <label id="addizionale">
+            Filhos menores de idade &nbsp;<b>*</b>
+          </label>
+          <input
+            id="DatiAddizionaliPrenotante_1___Descrizione"
+            name="DatiAddizionaliPrenotante[1]._Descrizione"
+            type="hidden"
+            value="Filhos menores de idade"
+          />
+          <select id="ddls_1" data-index="1" onchange="ControloSelect(this)">
+            <option value="0"></option>
+            <option value="11">Sim</option>
+            <option value="12">Não</option></select
+          ><input
+            data-val="true"
+            data-val-required="The _Obbligatorio field is required."
+            id="DatiAddizionaliPrenotante_1___Obbligatorio"
+            name="DatiAddizionaliPrenotante[1]._Obbligatorio"
+            type="hidden"
+            value="True"
+          />
+          <div>
+            <p>
+              <span
+                class="field-validation-valid"
+                data-valmsg-for="addizionale_1"
+                data-valmsg-replace="true"
+                style="color: red"
+              ></span>
+            </p>
+            <p>
+              <span
+                class="field-validation-valid"
+                data-valmsg-for="addizionaleRegEx_1"
+                data-valmsg-replace="true"
+                style="color: red"
+              ></span>
+            </p>
+          </div>
+        </div>
+        <input
+          data-val="true"
+          data-val-number="The field _Id must be a number."
+          data-val-required="The _Id field is required."
+          id="hiddenId1"
+          name="DatiAddizionaliPrenotante[1]._Id"
+          type="hidden"
+          value="24830"
+        /><input
+          data-val="true"
+          data-val-number="The field IDTipoDatoAddizionale must be a number."
+          data-val-required="The IDTipoDatoAddizionale field is required."
+          id="hiddenIdDatoADD_1"
+          name="DatiAddizionaliPrenotante[1]._TipoDatoAddizionale.IDTipoDatoAddizionale"
+          type="hidden"
+          value="11"
+        /><input
+          data-val="true"
+          data-val-number="The field IDTipoControllo must be a number."
+          data-val-required="The IDTipoControllo field is required."
+          id="hiddenCodDatoAdd_1"
+          name="DatiAddizionaliPrenotante[1]._TipoDatoAddizionale.IDTipoControllo"
+          type="hidden"
+          value="3"
+        /><input
+          id="hiddenRegEx_1"
+          name="DatiAddizionaliPrenotante[1]._TipoDatoAddizionale.RegEx"
+          type="hidden"
+          value=""
+        />
+        <div id="datoaddizionale_2">
+          <label id="addizionale">
+            Número de filhos menores de idade &nbsp;<b>*</b>
+          </label>
+          <input
+            id="DatiAddizionaliPrenotante_2___Descrizione"
+            name="DatiAddizionaliPrenotante[2]._Descrizione"
+            type="hidden"
+            value="Número de filhos menores de idade "
+          />
+          <input
+            id="DatiAddizionaliPrenotante_2___testo"
+            maxlength="100"
+            name="DatiAddizionaliPrenotante[2]._testo"
+            onchange="ControlloTesto(this)"
+            type="text"
+            value=""
+          /><input
+            data-val="true"
+            data-val-required="The _Obbligatorio field is required."
+            id="DatiAddizionaliPrenotante_2___Obbligatorio"
+            name="DatiAddizionaliPrenotante[2]._Obbligatorio"
+            type="hidden"
+            value="True"
+          />
+          <div>
+            <p>
+              <span
+                class="field-validation-valid"
+                data-valmsg-for="addizionale_2"
+                data-valmsg-replace="true"
+                style="color: red"
+              ></span>
+            </p>
+            <p>
+              <span
+                class="field-validation-valid"
+                data-valmsg-for="addizionaleRegEx_2"
+                data-valmsg-replace="true"
+                style="color: red"
+              ></span>
+            </p>
+          </div>
+        </div>
+        <input
+          data-val="true"
+          data-val-number="The field _Id must be a number."
+          data-val-required="The _Id field is required."
+          id="hiddenId2"
+          name="DatiAddizionaliPrenotante[2]._Id"
+          type="hidden"
+          value="24831"
+        /><input
+          data-val="true"
+          data-val-number="The field IDTipoDatoAddizionale must be a number."
+          data-val-required="The IDTipoDatoAddizionale field is required."
+          id="hiddenIdDatoADD_2"
+          name="DatiAddizionaliPrenotante[2]._TipoDatoAddizionale.IDTipoDatoAddizionale"
+          type="hidden"
+          value="12"
+        /><input
+          data-val="true"
+          data-val-number="The field IDTipoControllo must be a number."
+          data-val-required="The IDTipoControllo field is required."
+          id="hiddenCodDatoAdd_2"
+          name="DatiAddizionaliPrenotante[2]._TipoDatoAddizionale.IDTipoControllo"
+          type="hidden"
+          value="2"
+        /><input
+          id="hiddenRegEx_2"
+          name="DatiAddizionaliPrenotante[2]._TipoDatoAddizionale.RegEx"
+          type="hidden"
+          value=""
+        />
+        <div id="datoaddizionale_3">
+          <label id="addizionale">
+            Endereço de residência completo &nbsp;<b>*</b>
+          </label>
+          <input
+            id="DatiAddizionaliPrenotante_3___Descrizione"
+            name="DatiAddizionaliPrenotante[3]._Descrizione"
+            type="hidden"
+            value="Endereço de residência completo"
+          />
+          <input
+            id="DatiAddizionaliPrenotante_3___testo"
+            maxlength="100"
+            name="DatiAddizionaliPrenotante[3]._testo"
+            onchange="ControlloTesto(this)"
+            type="text"
+            value=""
+          /><input
+            data-val="true"
+            data-val-required="The _Obbligatorio field is required."
+            id="DatiAddizionaliPrenotante_3___Obbligatorio"
+            name="DatiAddizionaliPrenotante[3]._Obbligatorio"
+            type="hidden"
+            value="True"
+          />
+          <div>
+            <p>
+              <span
+                class="field-validation-valid"
+                data-valmsg-for="addizionale_3"
+                data-valmsg-replace="true"
+                style="color: red"
+              ></span>
+            </p>
+            <p>
+              <span
+                class="field-validation-valid"
+                data-valmsg-for="addizionaleRegEx_3"
+                data-valmsg-replace="true"
+                style="color: red"
+              ></span>
+            </p>
+          </div>
+        </div>
+        <input
+          data-val="true"
+          data-val-number="The field _Id must be a number."
+          data-val-required="The _Id field is required."
+          id="hiddenId3"
+          name="DatiAddizionaliPrenotante[3]._Id"
+          type="hidden"
+          value="24832"
+        /><input
+          data-val="true"
+          data-val-number="The field IDTipoDatoAddizionale must be a number."
+          data-val-required="The IDTipoDatoAddizionale field is required."
+          id="hiddenIdDatoADD_3"
+          name="DatiAddizionaliPrenotante[3]._TipoDatoAddizionale.IDTipoDatoAddizionale"
+          type="hidden"
+          value="25"
+        /><input
+          data-val="true"
+          data-val-number="The field IDTipoControllo must be a number."
+          data-val-required="The IDTipoControllo field is required."
+          id="hiddenCodDatoAdd_3"
+          name="DatiAddizionaliPrenotante[3]._TipoDatoAddizionale.IDTipoControllo"
+          type="hidden"
+          value="2"
+        /><input
+          id="hiddenRegEx_3"
+          name="DatiAddizionaliPrenotante[3]._TipoDatoAddizionale.RegEx"
+          type="hidden"
+          value=""
+        />
+        <div id="datoaddizionale_4">
+          <label id="addizionale"> Estado civil &nbsp;<b>*</b> </label>
+          <input
+            id="DatiAddizionaliPrenotante_4___Descrizione"
+            name="DatiAddizionaliPrenotante[4]._Descrizione"
+            type="hidden"
+            value="Estado civil"
+          />
+          <select id="ddls_4" data-index="4" onchange="ControloSelect(this)">
+            <option value="0"></option>
+            <option value="13">Casado/a</option>
+            <option value="14">Divorciado/a</option>
+            <option value="15">Viúvo/a</option>
+            <option value="16">Solteiro/Solteira</option>
+            <option value="17">Separado/a</option>
+            <option value="18">Em união civil</option>
+            <option value="19">Separado/a de União Civil</option>
+            <option value="20">Divorciado/a de União Civil</option>
+            <option value="21">Viúvo/a de União Civil</option></select
+          ><input
+            data-val="true"
+            data-val-required="The _Obbligatorio field is required."
+            id="DatiAddizionaliPrenotante_4___Obbligatorio"
+            name="DatiAddizionaliPrenotante[4]._Obbligatorio"
+            type="hidden"
+            value="True"
+          />
+          <div>
+            <p>
+              <span
+                class="field-validation-valid"
+                data-valmsg-for="addizionale_4"
+                data-valmsg-replace="true"
+                style="color: red"
+              ></span>
+            </p>
+            <p>
+              <span
+                class="field-validation-valid"
+                data-valmsg-for="addizionaleRegEx_4"
+                data-valmsg-replace="true"
+                style="color: red"
+              ></span>
+            </p>
+          </div>
+        </div>
+        <input
+          data-val="true"
+          data-val-number="The field _Id must be a number."
+          data-val-required="The _Id field is required."
+          id="hiddenId4"
+          name="DatiAddizionaliPrenotante[4]._Id"
+          type="hidden"
+          value="24833"
+        /><input
+          data-val="true"
+          data-val-number="The field IDTipoDatoAddizionale must be a number."
+          data-val-required="The IDTipoDatoAddizionale field is required."
+          id="hiddenIdDatoADD_4"
+          name="DatiAddizionaliPrenotante[4]._TipoDatoAddizionale.IDTipoDatoAddizionale"
+          type="hidden"
+          value="17"
+        /><input
+          data-val="true"
+          data-val-number="The field IDTipoControllo must be a number."
+          data-val-required="The IDTipoControllo field is required."
+          id="hiddenCodDatoAdd_4"
+          name="DatiAddizionaliPrenotante[4]._TipoDatoAddizionale.IDTipoControllo"
+          type="hidden"
+          value="3"
+        /><input
+          id="hiddenRegEx_4"
+          name="DatiAddizionaliPrenotante[4]._TipoDatoAddizionale.RegEx"
+          type="hidden"
+          value=""
+        />
+        <div id="datoaddizionale_5">
+          <label id="addizionale">
+            Data de validade do passaporte (dd/mm/aaaa)
+          </label>
+          <input
+            id="DatiAddizionaliPrenotante_5___Descrizione"
+            name="DatiAddizionaliPrenotante[5]._Descrizione"
+            type="hidden"
+            value="Data de validade do passaporte (dd/mm/aaaa)"
+          />
+          <input
+            class="text-box single-line"
+            data-val="true"
+            data-val-date="The field _data must be a date."
+            id="DatiAddizionaliPrenotante_5___data"
+            name="DatiAddizionaliPrenotante[5]._data"
+            type="date"
+            value=""
+          /><input
+            data-val="true"
+            data-val-required="The _Obbligatorio field is required."
+            id="DatiAddizionaliPrenotante_5___Obbligatorio"
+            name="DatiAddizionaliPrenotante[5]._Obbligatorio"
+            type="hidden"
+            value="False"
+          />
+          <div>
+            <p>
+              <span
+                class="field-validation-valid"
+                data-valmsg-for="addizionale_5"
+                data-valmsg-replace="true"
+                style="color: red"
+              ></span>
+            </p>
+            <p>
+              <span
+                class="field-validation-valid"
+                data-valmsg-for="addizionaleRegEx_5"
+                data-valmsg-replace="true"
+                style="color: red"
+              ></span>
+            </p>
+          </div>
+        </div>
+        <input
+          data-val="true"
+          data-val-number="The field _Id must be a number."
+          data-val-required="The _Id field is required."
+          id="hiddenId5"
+          name="DatiAddizionaliPrenotante[5]._Id"
+          type="hidden"
+          value="24834"
+        /><input
+          data-val="true"
+          data-val-number="The field IDTipoDatoAddizionale must be a number."
+          data-val-required="The IDTipoDatoAddizionale field is required."
+          id="hiddenIdDatoADD_5"
+          name="DatiAddizionaliPrenotante[5]._TipoDatoAddizionale.IDTipoDatoAddizionale"
+          type="hidden"
+          value="5"
+        /><input
+          data-val="true"
+          data-val-number="The field IDTipoControllo must be a number."
+          data-val-required="The IDTipoControllo field is required."
+          id="hiddenCodDatoAdd_5"
+          name="DatiAddizionaliPrenotante[5]._TipoDatoAddizionale.IDTipoControllo"
+          type="hidden"
+          value="1"
+        /><input
+          id="hiddenRegEx_5"
+          name="DatiAddizionaliPrenotante[5]._TipoDatoAddizionale.RegEx"
+          type="hidden"
+          value=""
+        />
+        <div id="docAddizionale_0">
+          <label id="doc">
+            Documento de identidade/de viagem &nbsp;<b>*</b>
+          </label>
+          <p class="helper">
+            É possível inserir arquivos em formato PDF de até 1 Mb<b>;</b>
+          </p>
+          <input
+            id="DocumentiPrenotante_0___Descrizione"
+            name="DocumentiPrenotante[0]._Descrizione"
+            type="hidden"
+            value="Documento de identidade/de viagem"
+          />
+          <input
+            id="File_0"
+            name="DocumentiPrenotante[0]._File"
+            onchange="controlloFileCaricato(this)"
+            type="file"
+            value=""
+          />
+          <span
+            class="field-validation-valid"
+            data-valmsg-for="Lenght_0"
+            data-valmsg-replace="true"
+            style="color: red"
+          ></span>
+          <input
+            data-val="true"
+            data-val-required="The _Obbligatorio field is required."
+            id="DocumentiPrenotante_0___Obbligatorio"
+            name="DocumentiPrenotante[0]._Obbligatorio"
+            type="hidden"
+            value="True"
+          />
+          <span
+            class="field-validation-valid validator-required"
+            data-valmsg-for="Required_0"
+            data-valmsg-replace="true"
+            style="color: red"
+          ></span>
+          <span
+            class="field-validation-valid validator-required"
+            data-valmsg-for="Extension_0"
+            data-valmsg-replace="true"
+            style="color: red"
+          ></span>
+          <input
+            data-val="true"
+            data-val-number="The field _Id must be a number."
+            data-val-required="The _Id field is required."
+            id="DocumentiPrenotante_0___Id"
+            name="DocumentiPrenotante[0]._Id"
+            type="hidden"
+            value="3278"
+          />
+        </div>
+        <input
+          data-val="true"
+          data-val-number="The field IDTipoDocumento must be a number."
+          data-val-required="The IDTipoDocumento field is required."
+          id="hiddenIdDocADD_0"
+          name="DocumentiPrenotante[0]._TipoDocumento.IDTipoDocumento"
+          type="hidden"
+          value="4"
+        /><input
+          id="hiddenFile_0"
+          name="DocumentiPrenotante[0]._File"
+          type="hidden"
+          value=""
+        />
+        <div id="docAddizionale_1">
+          <label id="doc">
+            Documentos que compravam a residência no exterior &nbsp;<b>*</b>
+          </label>
+          <p class="helper">
+            É possível inserir arquivos em formato PDF de até 1 Mb<b>;</b>
+          </p>
+          <input
+            id="DocumentiPrenotante_1___Descrizione"
+            name="DocumentiPrenotante[1]._Descrizione"
+            type="hidden"
+            value="Documentos que compravam a residência no exterior "
+          />
+          <input
+            id="File_1"
+            name="DocumentiPrenotante[1]._File"
+            onchange="controlloFileCaricato(this)"
+            type="file"
+            value=""
+          />
+          <span
+            class="field-validation-valid"
+            data-valmsg-for="Lenght_1"
+            data-valmsg-replace="true"
+            style="color: red"
+          ></span>
+          <input
+            data-val="true"
+            data-val-required="The _Obbligatorio field is required."
+            id="DocumentiPrenotante_1___Obbligatorio"
+            name="DocumentiPrenotante[1]._Obbligatorio"
+            type="hidden"
+            value="True"
+          />
+          <span
+            class="field-validation-valid validator-required"
+            data-valmsg-for="Required_1"
+            data-valmsg-replace="true"
+            style="color: red"
+          ></span>
+          <span
+            class="field-validation-valid validator-required"
+            data-valmsg-for="Extension_1"
+            data-valmsg-replace="true"
+            style="color: red"
+          ></span>
+          <input
+            data-val="true"
+            data-val-number="The field _Id must be a number."
+            data-val-required="The _Id field is required."
+            id="DocumentiPrenotante_1___Id"
+            name="DocumentiPrenotante[1]._Id"
+            type="hidden"
+            value="3279"
+          />
+        </div>
+        <input
+          data-val="true"
+          data-val-number="The field IDTipoDocumento must be a number."
+          data-val-required="The IDTipoDocumento field is required."
+          id="hiddenIdDocADD_1"
+          name="DocumentiPrenotante[1]._TipoDocumento.IDTipoDocumento"
+          type="hidden"
+          value="11"
+        /><input
+          id="hiddenFile_1"
+          name="DocumentiPrenotante[1]._File"
+          type="hidden"
+          value=""
+        />
+        <div id="docAddizionale_2">
+          <label id="doc">
+            Documento de identidade/de viagem filhos menores de idade
+          </label>
+          <p class="helper">
+            É possível inserir arquivos em formato PDF de até 1 Mb<b>;</b>
+          </p>
+          <input
+            id="DocumentiPrenotante_2___Descrizione"
+            name="DocumentiPrenotante[2]._Descrizione"
+            type="hidden"
+            value="Documento de identidade/de viagem filhos menores de idade"
+          />
+          <input
+            id="File_2"
+            name="DocumentiPrenotante[2]._File"
+            onchange="controlloFileCaricato(this)"
+            type="file"
+            value=""
+          />
+          <span
+            class="field-validation-valid"
+            data-valmsg-for="Lenght_2"
+            data-valmsg-replace="true"
+            style="color: red"
+          ></span>
+          <input
+            data-val="true"
+            data-val-required="The _Obbligatorio field is required."
+            id="DocumentiPrenotante_2___Obbligatorio"
+            name="DocumentiPrenotante[2]._Obbligatorio"
+            type="hidden"
+            value="False"
+          />
+          <span
+            class="field-validation-valid validator-required"
+            data-valmsg-for="Required_2"
+            data-valmsg-replace="true"
+            style="color: red"
+          ></span>
+          <span
+            class="field-validation-valid validator-required"
+            data-valmsg-for="Extension_2"
+            data-valmsg-replace="true"
+            style="color: red"
+          ></span>
+          <input
+            data-val="true"
+            data-val-number="The field _Id must be a number."
+            data-val-required="The _Id field is required."
+            id="DocumentiPrenotante_2___Id"
+            name="DocumentiPrenotante[2]._Id"
+            type="hidden"
+            value="3280"
+          />
+        </div>
+        <input
+          data-val="true"
+          data-val-number="The field IDTipoDocumento must be a number."
+          data-val-required="The IDTipoDocumento field is required."
+          id="hiddenIdDocADD_2"
+          name="DocumentiPrenotante[2]._TipoDocumento.IDTipoDocumento"
+          type="hidden"
+          value="6"
+        /><input
+          id="hiddenFile_2"
+          name="DocumentiPrenotante[2]._File"
+          type="hidden"
+          value=""
+        />
+        <input
+          data-val="true"
+          data-val-number="The field _idSelezionato must be a number."
+          data-val-required="The _idSelezionato field is required."
+          id="hiddenSelezionato_0"
+          name="DatiAddizionaliPrenotante[0]._idSelezionato"
+          type="hidden"
+          value="0"
+        /><input
+          data-val="true"
+          data-val-number="The field _idSelezionato must be a number."
+          data-val-required="The _idSelezionato field is required."
+          id="hiddenSelezionato_1"
+          name="DatiAddizionaliPrenotante[1]._idSelezionato"
+          type="hidden"
+          value="0"
+        /><input
+          data-val="true"
+          data-val-number="The field _idSelezionato must be a number."
+          data-val-required="The _idSelezionato field is required."
+          id="hiddenSelezionato_4"
+          name="DatiAddizionaliPrenotante[4]._idSelezionato"
+          type="hidden"
+          value="0"
+        />
+      </div>
+
+      <div id="ifMultiple" style="display: none"></div>
+    </div>
+    <div>
+      <h2>Anotações para a Sede</h2>
+      <textarea
+        cols="20"
+        id="BookingNotes"
+        maxlength="100"
+        name="BookingNotes"
+        rows="2"
+        style="width: 100%; height: 200px; resize: none"
+      ></textarea>
+    </div>
+
+    <div style="margin: 30px 0px 30px 0px">
+      <h2>OTP</h2>
+      <input
+        type="text"
+        placeholder="OTP"
+        id="otp-input"
+        name="otp-input"
+        class="name form-control"
+        style="margin-bottom: 20px"
+        required=""
+      />
+      <button
+        type="button"
+        class="button primary"
+        id="otp-send"
+        onclick="sendOTP();"
+      >
+        Envie um novo código
+      </button>
+      <img
+        id="otp-loader"
+        src="/Content/img/loading.GIF"
+        alt=""
+        style="height: 50px; margin-left: 20px; display: none"
+      />
+      <div id="IdOtpSent" style="display: none; color: green">
+        <p>Novo código enviado!</p>
+      </div>
+      <div id="IdOtpInvalid" style="display: none; color: red">
+        <p>Código errado!</p>
+      </div>
+    </div>
+
+    <div>
+      <h2>Política de Privacidade</h2>
+      <div>
+        <div class="row">
+          <input
+            data-val="true"
+            data-val-required="The PrivacyCheck field is required."
+            id="PrivacyCheck"
+            name="PrivacyCheck"
+            required=""
+            style="
+              -ms-transform: scale(2);
+              -webkit-transform: scale(2);
+              width: 50px;
+            "
+            type="checkbox"
+            value="true"
+          /><input name="PrivacyCheck" type="hidden" value="false" />
+          <label style="font-size: large"
+            >Eu li e aceito a
+            <a
+              href="/Content/docs/PRIVACY_LLTP.pdf#toolbar=0&amp;zoom=141"
+              target="_blank"
+            >
+              Política de Privacidade</a
+            ></label
+          >
+          <div>
+            <br />
+            <span
+              class="field-validation-valid"
+              data-valmsg-for="Privacy"
+              data-valmsg-replace="true"
+              style="text-align: left; color: red"
+            ></span>
+            <span
+              tipoprenotazionegiainserito="Type of reservation already made for this service"
+              class="field-validation-valid"
+              data-valmsg-for="Invalid booking"
+              data-valmsg-replace="true"
+              style="text-align: left; color: red"
+            ></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footing-container">
+      <button
+        type="button"
+        class="button primary"
+        onclick="window.location.href='/Services/Index';"
+      >
+        Voltar para a lista
+      </button>
+      <button
+        type="submit"
+        id="btnAvanti"
+        class="button primary g-recaptcha"
+        data-sitekey="6LdSmG4cAAAAAOarRxGIhehvv4sPgVeF-vRi-Jqb"
+        data-callback="onSubmit"
+      >
+        Avançar
+      </button>
+    </div>
+  </div>
+</form>
